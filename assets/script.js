@@ -22,6 +22,7 @@ function getPasswordLength() {
       getUserInput();
     }
     // this returns value from the getUserInput function to pwLength
+    // console.log(userInput);
     return userInput;
   }());
    // //  return sets the value of the function
@@ -87,8 +88,9 @@ function writePassword() {
 var password = "" 
 
   for (let i = 0; i < passwordLength; i++) {
-    var index = Math.floor(Math.random()* (cBank.length - 1));
+    var index = Math.floor(Math.random()* cBank.length);
     password = password + cBank[index];
+    // password += cBank[Math.floor(Math.random()* (cBank.length - 1))]
   }
   // the text area that displays the pw is defined
   // and connected to the textarea in the html
