@@ -41,6 +41,10 @@ function getTrueFalse(characterType) {
     alert('please enter y/n');
     getUserInput();
   }
+  // if(userInput == 'n' ) {
+  //   alert('please select at least one character type')
+  //   getUserInput();
+  // } I somehow need to make sure at least one character set is selected
   if(userInput == 'y') {
     alert('you have included '+ characterType);
     return true;
