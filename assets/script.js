@@ -1,20 +1,34 @@
 // Assignment code here
 // This is the function within the var "password"
 function generatePassword() {
-  // testPrompt var will become the value typed in
-  // by the user and the prompt is a set js action
-  // that makes a window pop up to collect user input
-  // var pwLength = prompt('Choose a password length\n⚠️at least 8 and no more than 128⚠️');
-  // pwLength var is defined as 
-  var pwLength = (function ask() {
-    var n = prompt('Choose a password length\n⚠️at least 8 and no more than 128⚠️');
-    return isNaN(n) || +n > 128 || +n < 8 ? ask() : n;
+  // // pwLength var is defined as 
+  let pwLength = (function getUserInput() {
+      // // prompt makes a window pop up to collect user input
+    var userInput = prompt("Choose a password length\n⚠️at least 8 and no more than 128⚠️");
+    if(!userInput) {
+      return;
+    }
+    // isNan checks to see if the input is not a number
+    if(isNaN(userInput)){
+      alert('please enter a number');
+      getUserInput();
+    }
+    if(userInput < 8) {
+      alert('please enter a number that is at least 8 or more');
+      getUserInput(); 
+    }
+    if(userInput > 128) {
+      alert('Please enter a number that is no more than 128');
+      getUserInput();
+    }
+    // this returns value from the getUserInput function to pwLength
+    return userInput;
   }());
-  // var charTypes = prompt('Which of the following character types would you like to include?');
-  //  return sets the value of the function
-  // generatePassword
-  return (pwLength);
+   // //  return sets the value of the function
+  return pwLength;
 }
+
+// prompt user to enter a number
 
 // Get references to the #generate element
 // this declares generateBtn and connects it with 
