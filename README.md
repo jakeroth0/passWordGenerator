@@ -16,4 +16,4 @@ N/A
 
 ## Screen Shot
 
-![Screen Shot](assets/images/Screen Shot PWGen.png)
+![Screen Shot](https://github.com/jakeroth0/passWordGenerator/blob/fd9b8a9f9708d269852dccf0db9d652dd8c430ac/assets/images/Screen%20Shot%20PWGen.png)
