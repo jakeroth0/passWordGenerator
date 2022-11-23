@@ -16,4 +16,4 @@ N/A
 
 ## Screen Shot
 
-![Screen Shot](add screenshot url within github folder here)
+![Screen Shot](assets/images/Screen Shot PWGen.png)
