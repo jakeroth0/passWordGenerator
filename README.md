@@ -4,7 +4,7 @@
 In this weeks challenge, I was tasked with creating a password generator. This app will run in the browser and will feature dynamically updated HTML/CSS powered by JavaScript code. The app will randomly generate a password that meets certain criteria.
 ## Link
 
-[passWordGenerator]([[add url here](https://jakeroth0.github.io/passWordGenerator/)])
+[passWordGenerator](https://jakeroth0.github.io/passWordGenerator/)
 
 ## Credits
 
